@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
         if (isActiveAndEnabled &&
             (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)))
         {
-            jumpSound.Play();
+            //jumpSound.Play();
             if (isOnGround)
             {
                 myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, jumpForce);
@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("KillBox"))
         {
-            deathSound.Play();
+            //deathSound.Play();
             moveSpeed = moveSpeedOrigin;
             speedMilestoneCounts = speedMilestoneCountsOrigin;
             speedIncreaseMilestone = speedIncreaseMilestoneOrigin;

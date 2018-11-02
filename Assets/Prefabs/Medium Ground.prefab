@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4629614821514606}
   - component: {fileID: 212199960584870176}
   - component: {fileID: 61371024944097156}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: runner ground (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4368183261128284}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Medium Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ GameObject:
   - component: {fileID: 4202410873798932}
   - component: {fileID: 212657316947478096}
   - component: {fileID: 61338036563786782}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: runner ground (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

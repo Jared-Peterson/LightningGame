@@ -14,11 +14,11 @@ public class HUDScript : MonoBehaviour {
 		playerScore += amount;
 	}
 
-	void onDisable(){
-		PlayerPrefs.SetInt("Score", (int)playerScore *100);
+	void OnDisable(){
+		PlayerPrefs.SetInt("Score", (int)(playerScore * 10));
 	}
 
-	void OnGui(){
-		GUI.Label(new Rect(10,10,100,300), "Score: " + (int)(playerScore *100));
+	void OnGUI(){
+		GUI.Label(new Rect(10,10,100,30), "Score: " + (int)(playerScore * 10));
 	}
 }

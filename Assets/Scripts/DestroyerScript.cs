@@ -8,8 +8,8 @@ public class DestroyerScript : MonoBehaviour {
     {
         if(other.tag == "Player")
         {
-            //Application.LoadLevel(1);
-            Debug.Break();
+            Application.LoadLevel(1);
+            //Debug.Break();
             return;
         }
         if (other.gameObject.transform.parent)

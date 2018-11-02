@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4801984242384802}
   - component: {fileID: 212789936275792476}
   - component: {fileID: 61723340171206552}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: runner ground (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4022579194035496}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Large Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ GameObject:
   - component: {fileID: 4200750914374446}
   - component: {fileID: 212375887240855494}
   - component: {fileID: 61891149775545148}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: runner ground (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   - component: {fileID: 4414171775915394}
   - component: {fileID: 212006069856035594}
   - component: {fileID: 61415604664557612}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: runner ground (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
