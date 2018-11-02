@@ -221,8 +221,8 @@ GameObject:
   - component: {fileID: 528005078}
   - component: {fileID: 528005077}
   - component: {fileID: 528005076}
-  - component: {fileID: 528005075}
   - component: {fileID: 528005079}
+  - component: {fileID: 528005075}
   m_Layer: 0
   m_Name: Runner
   m_TagString: Player
@@ -302,7 +302,7 @@ Transform:
   m_GameObject: {fileID: 528005071}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -319,12 +319,12 @@ PlatformEffector2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RotationalOffset: 0
-  m_UseOneWay: 1
+  m_UseOneWay: 0
   m_UseOneWayGrouping: 0
   m_SurfaceArc: 360
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1
+  m_UseSideFriction: 1
+  m_UseSideBounce: 1
+  m_SideArc: 180
 --- !u!50 &528005076
 Rigidbody2D:
   serializedVersion: 4
@@ -335,8 +335,8 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
+  m_UseAutoMass: 1
+  m_Mass: 3.1314335
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -384,7 +384,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.905
+  m_Radius: 1
 --- !u!114 &528005079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,16 +396,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ad47e6b6cdf9344fa9ac109c1956bf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 15
+  moveSpeed: 10
   speedMutiplier: 1
   speedIncreaseMilestone: 1
-  jumpForce: 7
-  jumpTime: 4
-  isOnGround: 0
+  jumpForce: 6
+  jumpTime: 3
+  isOnGround: 1
   groundLayer:
     serializedVersion: 2
     m_Bits: 4294967295
-  groundCheckPoint: {fileID: 4022579194035496, guid: 4c04929dfb2023a498a959c1d8d1bf54,
+  groundCheckPoint: {fileID: 4368183261128284, guid: 3fcc18d0043b8564bb3ca97efe8ffc5c,
     type: 2}
   groundCheckRadius: 1
   jumpSound: {fileID: 0}
@@ -553,6 +553,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 519420032}
     m_Modifications:
+    - target: {fileID: 114080355049972916, guid: 850f9cf8d23f8ac41a2cb193f3996c9a,
+        type: 2}
+      propertyPath: obj.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4004531822871102, guid: 850f9cf8d23f8ac41a2cb193f3996c9a, type: 2}
       propertyPath: m_LocalPosition.x
       value: 18
@@ -584,6 +589,20 @@ Prefab:
     - target: {fileID: 4004531822871102, guid: 850f9cf8d23f8ac41a2cb193f3996c9a, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729701369571234, guid: 850f9cf8d23f8ac41a2cb193f3996c9a, type: 2}
+      propertyPath: m_Name
+      value: Ground middle
+      objectReference: {fileID: 0}
+    - target: {fileID: 114080355049972916, guid: 850f9cf8d23f8ac41a2cb193f3996c9a,
+        type: 2}
+      propertyPath: obj.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114080355049972916, guid: 850f9cf8d23f8ac41a2cb193f3996c9a,
+        type: 2}
+      propertyPath: spawnMax
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 850f9cf8d23f8ac41a2cb193f3996c9a, type: 2}
@@ -649,6 +668,15 @@ Prefab:
       value: 
       objectReference: {fileID: 1196729685221470, guid: 4c04929dfb2023a498a959c1d8d1bf54,
         type: 2}
+    - target: {fileID: 1729701369571234, guid: 850f9cf8d23f8ac41a2cb193f3996c9a, type: 2}
+      propertyPath: m_Name
+      value: Ground bottom
+      objectReference: {fileID: 0}
+    - target: {fileID: 114080355049972916, guid: 850f9cf8d23f8ac41a2cb193f3996c9a,
+        type: 2}
+      propertyPath: spawnMax
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 850f9cf8d23f8ac41a2cb193f3996c9a, type: 2}
   m_IsPrefabAsset: 0
@@ -659,6 +687,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 519420032}
     m_Modifications:
+    - target: {fileID: 114080355049972916, guid: 850f9cf8d23f8ac41a2cb193f3996c9a,
+        type: 2}
+      propertyPath: obj.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4004531822871102, guid: 850f9cf8d23f8ac41a2cb193f3996c9a, type: 2}
       propertyPath: m_LocalPosition.x
       value: 18
@@ -693,7 +726,17 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1729701369571234, guid: 850f9cf8d23f8ac41a2cb193f3996c9a, type: 2}
       propertyPath: m_Name
-      value: Ground Spawn (1)
+      value: Ground top
+      objectReference: {fileID: 0}
+    - target: {fileID: 114080355049972916, guid: 850f9cf8d23f8ac41a2cb193f3996c9a,
+        type: 2}
+      propertyPath: obj.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114080355049972916, guid: 850f9cf8d23f8ac41a2cb193f3996c9a,
+        type: 2}
+      propertyPath: spawnMax
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 850f9cf8d23f8ac41a2cb193f3996c9a, type: 2}
@@ -712,8 +755,8 @@ GameObject:
   - component: {fileID: 1386088307}
   - component: {fileID: 1386088306}
   m_Layer: 0
-  m_Name: Destroyer (1)
-  m_TagString: Untagged
+  m_Name: Fall checker
+  m_TagString: KillBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -726,7 +769,7 @@ Transform:
   m_GameObject: {fileID: 1386088304}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -8, z: 10}
-  m_LocalScale: {x: 35, y: 1, z: 1}
+  m_LocalScale: {x: 70, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 519420032}
   m_RootOrder: 1
